@@ -1,12 +1,12 @@
 ## Curso Mobile
 - Introdução a POO (Programação Orientada a Objetos)
-    -Java 
+    - Java 
         - Instalação e Configuração
         - Lógica e programação em Java (Calculadora)
         - Conceitos:
-            -Classe
-            -Objeto
-            -Herança
-            -Polimorfismo
-            -Encapsulamento
-            -Abstração 
+            - Classe
+            - Objeto
+            - Herança
+            - Polimorfismo
+            - Encapsulamento
+            - Abstração 
