@@ -1,4 +1,3 @@
-import 'dart:math';
 
 import 'package:flutter/material.dart';
 
@@ -8,6 +7,8 @@ void main() {
 
 //classe de jaenla
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   // construtor da widgets
   @override
   Widget build(BuildContext context) {

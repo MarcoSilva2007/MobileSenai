@@ -1,4 +1,3 @@
-import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 
@@ -11,6 +10,8 @@ void main() {
 // Janela do aplicativo
 // StateFull Widget
 class ToDoListApp extends StatefulWidget {
+  const ToDoListApp({super.key});
+
   // Classe que realiza a mudança de estado
   @override
   _ToDoListAppState createState() => _ToDoListAppState();
@@ -19,7 +20,7 @@ class ToDoListApp extends StatefulWidget {
 class _ToDoListAppState extends State<ToDoListApp> {
   // A classe que constroi todo o aplicativo
   final TextEditingController _tarefaController = TextEditingController();
-  List<Map<String, dynamic>> _tarefas = [];
+  final List<Map<String, dynamic>> _tarefas = [];
   // Lista de tarefas
   @override
   Widget build(BuildContext context) {
