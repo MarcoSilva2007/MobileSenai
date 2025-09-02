@@ -1,34 +1,11 @@
 {
-  "usuarios": [
-    {
-      "id": "1",
-      "nome": "Mariana Pereira",
-      "email": "mariana@gmail.com"
-    },
-    {
-      "id": "2",
-      "nome": "José Antonio",
-      "email": "jose@gmail.com"
-    },
-    {
-      "id": "2d8a"
-    },
-    {
-      "id": "dd5f"
-    }
-  ],
+  "usuarios": [],
   "livros": [
     {
       "id": "1",
       "titulo": "O Guia do Mochileiro das Galáxias",
       "autor": "Douglas Adams",
       "disponivel": false
-    },
-    {
-      "id": "2",
-      "titulo": "Memórias Póstumas de Brás Cubas",
-      "autor": "Machado de Assis",
-      "disponivel": true
     }
   ],
   "emprestismos": [
