@@ -20,7 +20,7 @@ class _TarefasViewState extends State<TarefasView> {
   //Adicionar tarefa
   void _addTarefa() async {
     if (_tarefaField.text.trim().isNotEmpty && _user != null) {
-      await _db.collection('users').doc(_user!.uid).collection('tarefas').add({
+      await _db.collection('users').doc(_user.uid).collection('tarefas').add({
         "titulo": _tarefaField.text.trim(),
         "concluida": false,
         "criadaEm": DateTime.now(),
