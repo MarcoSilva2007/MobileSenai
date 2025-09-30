@@ -4,7 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
-void main() async {
+void main() async { //* Logo ao abrir o app ele garante a conexão com o firebase
   //* Garantir o carregamento dos Widgets primeiro
   WidgetsFlutterBinding.ensureInitialized();
 

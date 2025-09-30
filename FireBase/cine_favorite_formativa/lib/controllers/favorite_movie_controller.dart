@@ -4,7 +4,6 @@ import 'dart:io';
 import 'package:cine_favorite_formativa/models/favorite_movie_model.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:path_provider/path_provider.dart';
 
@@ -34,13 +33,13 @@ class FavoriteMovieController {
     final movie = FavoriteMovie(
       id: movieData["id"],
       title: movieData["title"],
-      posterPath: movieData["poster_path"],
+      posterPath: imagemFile.path.toString(), 
     );
     //*adicionar o obj no firestore
     await _db
-        .collection("user")
+        .collection("users")
         .doc(currentUser!.uid)
-        .collection("favorites_movies")
+        .collection("favorite_movies")
         .doc(movie.id.toString())
         .set(movie.toMap());
   }
