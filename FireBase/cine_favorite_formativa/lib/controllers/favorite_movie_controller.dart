@@ -48,8 +48,9 @@ class FavoriteMovieController {
   //*stream -> listener, pega a lista de favoritos sempre que for modificado
   Stream<List<FavoriteMovie>> getFavoriteMovies() {
     //* verifica se o usuario existe
-    if (currentUser == null)
+    if (currentUser == null) {
       return Stream.value([]); //*retorna a lista vazia se nao tem usuario
+    }
     return _db
         .collection("users")
         .doc(currentUser!.uid)

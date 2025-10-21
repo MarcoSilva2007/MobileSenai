@@ -1,4 +1,4 @@
-name: sa02_geolocator_api_image
+name: sa_somativa
 description: "A new Flutter project."
 publish_to: 'none'
 version: 0.1.0
@@ -9,10 +9,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  geolocator: ^14.0.2
-  http: ^1.5.0
-  image_picker: ^1.2.0
+  firebase_core: ^2.15.0      
+  firebase_auth: ^4.16.0      
+  cloud_firestore: ^4.13.0    
+  geolocator: ^12.0.0         
+  intl: ^0.20.2
   latlong2: ^0.9.1
+  local_auth: ^2.3.0
+  shared_preferences: ^2.5.3
 
 dev_dependencies:
   flutter_test:
